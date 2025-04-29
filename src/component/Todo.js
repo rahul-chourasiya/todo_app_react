@@ -9,11 +9,12 @@ const Todo = () => {
     component={"div"}
     sx={{
         height:"100%",
-        width:"100%",
+        // width:"80%",
         backgroundColor:"white",
         display:'flex',
         justifyContent:"center",
         alignItems:"center",
+        padding:"5%"
     }}>
         <Grid2 container>
             <Grid2 size={{xs:12 , md:12, sm:12,}}>

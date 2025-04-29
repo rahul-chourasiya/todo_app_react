@@ -43,7 +43,8 @@ const Hero = () => {
                             fontWeight: "600",
                             width: '21%',
                             color: "white",
-                            marginLeft: "10px"
+                            marginLeft: "10px",
+                            width: window.innerWidth < 750 ? "200px" :""
                         }}
                         onClick={()=>Addtodo()}>click me </Button>
                 </Stack>
