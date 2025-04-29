@@ -44,7 +44,7 @@ const Hero = () => {
                             width: '21%',
                             color: "white",
                             marginLeft: "10px",
-                            width: window.innerWidth < 750 ? "200px" :""
+                            width: window.innerWidth < 750 ? "200px" :"20%"
                         }}
                         onClick={()=>Addtodo()}>click me </Button>
                 </Stack>

@@ -14,10 +14,31 @@ const Todotable = () => {
             {
                 toggal === true ?
                         <Stack direction={"column"}>
-                            <ul style={{width:"50%"}}>
+                            <ul style={{width:"100%"}}>
                         <h2>Todo list</h2>
                          {todotext.map((item, i) => {
-                        return (<li style={{height:"55px"}} key={i} >{item}<Deletbutton item={item} /></li>)      
+                        return (<li
+                            key={i}
+                            style={{
+                              height: "55px",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "space-between",
+                              maxWidth: "200px",
+                              padding: "0 10px",
+                              overflow: "hidden",
+                              textOverflow: "ellipsis",
+                              whiteSpace: "nowrap",
+                              border: "1px solid #ccc",
+                              borderRadius: "5px",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                              {item}
+                            </span>
+                            <Deletbutton item={item} />
+                          </li>)      
                     })}</ul> 
                     <Alltododelet/>
                     </Stack>:

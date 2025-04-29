@@ -19,7 +19,7 @@ const Deletbutton = (props) => {
                 width: '80px',
                 height:"45px",
                 color: "white",
-                marginLeft: "100px",
+                // marginLeft: "100px",
                 float:"right"
             }}
             onClick={Delettodoitem}
