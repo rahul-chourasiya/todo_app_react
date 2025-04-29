@@ -17,7 +17,7 @@ const Todotable = () => {
                             <ul style={{width:"50%"}}>
                         <h2>Todo list</h2>
                          {todotext.map((item, i) => {
-                        return (<li style={{height:"55px"}} key={i} >{item}<Edit item={item}/><Deletbutton item={item} /></li>)      
+                        return (<li style={{height:"55px"}} key={i} >{item}<Deletbutton item={item} /></li>)      
                     })}</ul> 
                     <Alltododelet/>
                     </Stack>:
